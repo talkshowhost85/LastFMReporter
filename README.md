@@ -14,3 +14,6 @@ There are three files:
 3. index.php - The working file.
 4. Link to all files in your website where you want it to appear. For example you might put lastfm.css in /css folder so put this between your `<head>` tags `<link rel="text/stylesheet" href="https://YOUR.DOMAIN.COM/css/lastfm.css">`. Use PHP's include() to link all php files.
 5. Upload all files according to where you link them (Step #4).
+
+# The Author
+Hi. This is my first public repo. Please teach me :)
