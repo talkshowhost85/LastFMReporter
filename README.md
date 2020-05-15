@@ -2,9 +2,9 @@
 A simple scrobbler. Highly customizable CSS. Using CSS3's grid properties.
 
 ### Live Demo
-My Website: [BRT.WTF](https://apps.brt.wtf/lastfm/)
+My Website: [BRT.WTF](https://brt.wtf)
 
-Live Development (constant demo update): [https://apps.brt.wtf/lastfm/](https://apps.brt.wtf/lastfm/)
+Live Development (constant demo update): [https://app.brt.wtf/lastfm/](https://app.brt.wtf/lastfm/)
 
 ## BEFORE YOU BEGIN
 1. Make sure you have a [LastFM API account](https://secure.last.fm/login?next=/api/account/create).
