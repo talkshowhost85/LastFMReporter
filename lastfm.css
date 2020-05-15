@@ -1,0 +1,94 @@
+/* NOTE:
+There are 1 main DIV that holds everything, 1 inner DIV that holds two more DIVs containing the album art and song info respectively.
+
+See DIV tree below.
+
+MAIN div
+- CARD div 0
+-- ALBUM ART div 0
+-- SONG INFO div 0
+- CARD div 1
+-- ALBUM ART div 1
+-- SONG INFO div 1
+- CARD div 2
+-- ALBUM ART div 2
+-- SONG INFO div 2
+
+.. and so on
+
+*/
+a.card-href, a.card-href:active, a.card-href:visited, a.card-href:link{
+  text-decoration: none;
+  color: inherit;
+}
+div#card-stack{
+  width: 200px; /* Overall card size. 100% will match the parent element */
+  display: grid; /* Set display property to grid */
+  grid-template-columns: auto;
+  grid-row-gap: 0; /* Gap of each card */
+}
+div#card-single-row{
+  width: inherit; /* Overall card size. You may use 'inherit' value to match the parent element */
+  display: grid; /* Set display property to grid */
+  grid-template-columns: auto;
+  grid-row-gap: 0; /* Gap of each card */
+}
+div.card-single-content{
+  /*
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  text-shadow: 0px 1px 0px #ffffff;
+  */
+  color: #666666;
+  font-family: Arial;
+  clear: both;
+  display: grid;
+  grid-template-columns: auto; /* Add 10 to the original width size is recommended. Depending on your preferred layout you may put something else. Refer to $albArtSize variable for size guides. */
+}
+div.widget-title{
+  text-align: center;
+}
+div.card{
+  box-shadow: inset 0px 1px 0px 0px transparent;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-color: inherit;
+  color: #666666;
+  font-family: Arial;
+  font-size: 10px;
+  text-shadow: 0px 1px 0px transparent;
+  padding: 4px; /* Gaps in each card */
+  clear: both;
+  display: grid;
+  grid-template-columns: 74px auto; /* Add 10 to the original width size is recommended. Depending on your preferred layout you may put something else. Refer to $albArtSize variable for size guides. */
+  grid-column-gap: 4px; /* Column gap between two divs in each card */
+}
+div.card:hover{
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  color: #666666;
+  font-family: Arial;
+  font-size: 10px;
+  text-shadow: 0px 1px 0px #ffffff;
+  padding: 4px; /* Gaps in each card */
+  cursor: pointer;
+}
+div.user-art, div.album-art{
+  text-align: center;
+}
+div.user-art img, div.album-art img{
+  border-radius: 6px;
+  border: 1px #ccc solid;
+  box-shadow: 3px 3px 1px 0 #ccc;
+}
+div.user-info, div.song-info{
+  text-align: left;
+  word-wrap: break-word;
+  line-height: 14px;
+}
