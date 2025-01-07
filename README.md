@@ -2,7 +2,7 @@
 A simple scrobbler. Highly customizable CSS. Using CSS3's grid properties.
 
 ### Live Demo
-My Website: [BOTDROID.ME](https://botdroid.me)
+My Website: the site is no longer there
 
 Live Development (constant demo update): [https://app.botdroid.me/lastfm/](https://app.botdroid.me/lastfm/)
 
